@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+table{
+    width: 80%;
+    border-collapse: collapse;
+    border: 3px solid darkcyan;
+}
+
+th{
+    background-color: darkcyan;
+    color: white;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid darkcyan;
+}
+
+tr:nth-child(odd){
+    background-color: bisque;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.tarjeta1{
+    background-color: blue;
+    text-align: center;
+}
+
+.tarjeta2{
+    background-color: yellow;
+    text-align: center;
+}
+
+.tarjeta3{
+    background-color: violet;
+    text-align: center;
+}
+
+@media (min-width:300px) and (max-width:1145px){
+    .contenedor{
+        display: none;
+    }
+}
+
+@media (min-width:1146px) and (max-width:2000px){
+    .contenedor2{
+        display: none;
+    }
+}
